@@ -1,0 +1,59 @@
+
+" setting
+set nobackup
+set noswapfile
+set autoread
+set hidden
+set showcmd
+set autochdir
+set clipboard+=unnamed,unnamedplus
+set wildmode=longest,full
+inoremap <silent> <Esc> <Esc>:call system('fcitx-remote -c')<CR>
+set helplang=ja,en
+
+set encoding=utf-8
+set modifiable
+set fileencoding=utf-8
+set fileencodings=utf-8,cp932,sjis,euc-jp
+set fenc=utf-8
+
+" visual
+set number
+set cursorline
+set virtualedit=onemore
+set smartindent
+set belloff=all
+set showmatch
+set laststatus=2
+set wildmode=list:longest
+nnoremap j gj
+nnoremap k gk
+syntax enable
+set list listchars=tab:\▸\-
+
+" indent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4  
+set autoindent
+set smartindent
+set ambiwidth=double
+
+set breakindent
+set breakindentopt=shift:0
+
+
+
+" search
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" add plugin
+call plug#begin()
+    Plug 'vim-jp/vimdoc-ja'
+call plug#end()

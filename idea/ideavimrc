@@ -1,0 +1,15 @@
+source ~/.vimrc
+
+source .vimrc.keymap
+
+set keep-english-in-normal
+set clipboard=unnamed,autoselect
+set surround
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set visualbell
+set noerrorbells
+
+
